@@ -3,8 +3,7 @@ package com.wolvec.dimn.viewmodellivedatakotlin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.wolvec.dimn.viewmodellivedatakotlin.ui.UserViewModelActivity
-import com.wolvec.dimn.viewmodellivedatakotlin.ui.ViewModelActivity
+import com.wolvec.dimn.viewmodellivedatakotlin.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,19 +25,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(applicationContext, UserViewModelActivity::class.java)
             )
         }
-//
-//
-//        btLiveData.setOnClickListener {
-//            startActivity(Intent(applicationContext, LiveDataActivity::class.java))
-//        }
-//
-//        btDataBinding.setOnClickListener {
-//            startActivity(Intent(applicationContext, DataBindingActivity::class.java))
-//        }
-//
-//
-//        btDBLABinding.setOnClickListener {
-//            startActivity(Intent(applicationContext, DBLDActivity::class.java))
-//        }
+
+
+        btLiveData.setOnClickListener {
+            startActivity(Intent(applicationContext, LiveDataActivity::class.java))
+        }
+
+        btDataBinding.setOnClickListener {
+            startActivity(Intent(applicationContext, DataBindingActivity::class.java))
+        }
+
+
+        btDBLABinding.setOnClickListener {
+            startActivity(Intent(applicationContext, DBLDActivity::class.java))
+        }
     }
 }
